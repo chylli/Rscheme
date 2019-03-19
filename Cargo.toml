@@ -1,7 +1,7 @@
 [package]
-name = "Rscheme"
+name = "rscheme"
 version = "0.1.0"
-authors = ["Chylli <chylli@binary.com>"]
+authors = ["Chylli <chylli@163.com>"]
 edition = "2018"
 
 [dependencies]
