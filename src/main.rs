@@ -15,7 +15,13 @@ fn repl() -> io::Result<()>{
         io::stdout().flush().unwrap();
         let mut buffer = String::new();
         io::stdin().read_line(&mut buffer)?;
-        print!("{}", buffer);
+        match buffer.as_str() {
+            ".quit\n" => {
+                println!("Bye!");
+                break;
+            },
+            _ =>  print!("{}", buffer)
+        }
     }
     Ok(())
 
